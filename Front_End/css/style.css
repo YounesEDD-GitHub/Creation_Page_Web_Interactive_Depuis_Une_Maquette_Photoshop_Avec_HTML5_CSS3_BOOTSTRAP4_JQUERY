@@ -369,6 +369,7 @@ body {
   --------------------------------------------------------------*/
   .about {
     padding-bottom: 30px;
+    padding-top: 100px;
   }
   
   .about .container {
@@ -587,7 +588,8 @@ body {
   # Services
   --------------------------------------------------------------*/
   .services {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    padding-top: 116px;
   }
   
   .services .icon-box {
@@ -636,6 +638,10 @@ body {
   /*--------------------------------------------------------------
   # Our Portfolio
   --------------------------------------------------------------*/
+  .portfolio {
+    padding-top: 125px;
+  }
+
   .portfolio .portfolio-item {
     /* margin-bottom: 30px; */
     padding-right: 0px;
@@ -752,10 +758,12 @@ body {
   /*--------------------------------------------------------------
   # Contact Us
   --------------------------------------------------------------*/
+  
+  
   .contact .container-xl{
   background-color: rgb(91, 191, 40);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-bottom: 30px;
   }
   
   .info-box i, .info-box h6 {
