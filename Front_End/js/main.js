@@ -6,27 +6,7 @@ License: https://YounesEddargui.com/license/
 */
 !(function($) {
     "use strict";
-  
-    // Toggle .header-scrolled class to #header when page is scrolled
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-        $('#header').addClass('header-scrolled');
-      } else {
-        $('#header').removeClass('header-scrolled');
-      }
-    });
-  
-    if ($(window).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
-    }
-  
-    // Stick the header at top on scroll
-    $("#header").sticky({
-      topSpacing: 0,
-      zIndex: '50'
-    });
-  
-    // Smooth scroll for the navigation menu and links with .scrollto classes
+      // Smooth scroll for the navigation menu and links with .scrollto classes
     $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         e.preventDefault();
@@ -62,6 +42,25 @@ License: https://YounesEddargui.com/license/
         }
       }
     });
+      // Toggle .header-scrolled class to #header when page is scrolled
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+          $('#header').addClass('header-scrolled');
+        } else {
+          $('#header').removeClass('header-scrolled');
+        }
+      });
+    
+      if ($(window).scrollTop() > 100) {
+        $('#header').addClass('header-scrolled');
+      }
+    
+      // Stick the header at top on scroll
+      $("#header").sticky({
+        topSpacing: 0,
+        zIndex: '50'
+      });
+    
   
     // Mobile Navigation
     if ($('.nav-menu').length) {
